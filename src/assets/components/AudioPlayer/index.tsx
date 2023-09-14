@@ -12,7 +12,6 @@ export interface trackProps {
 	artist: string;
 	thumbnail?: string;
 	src: string;
-	href: string;
 }
 
 interface audioProviderProps {
@@ -87,8 +86,11 @@ export function AudioPlayer({ tracks }: audioProviderProps) {
 			}}
 		>
 			<div className='audio-player'>
-				<DisplayTrack />
-				<Controls />
+				<div className='display-track-controls'>
+					<DisplayTrack />
+					<Controls />
+				</div>
+				<hr className='m-1' />
 				<TrackList />
 			</div>
 		</AudioContext.Provider>

@@ -1,9 +1,18 @@
+:root {
+	--audio-info_height: 10rem;
+	--audio-controls-height: 4rem;
+}
+
+.audio-player .audio-controls {
+	height: var(--audio-controls-height);
+}
+
 .audio-player .audio-info {
 	display: flex;
-	padding: 1rem;
+	padding: 0.5rem;
 	column-gap: 1rem;
 	align-items: center;
-	height: 35vh;
+	height: var(--audio-info_height);
 }
 
 .audio-player .audio-avatar {
@@ -34,6 +43,7 @@
 .audio-player .audio-controls {
 	display: flex;
 	flex-direction: column;
+	height: var(--audio-controls-height);
 }
 
 .audio-player .audio-nav-buttons-and-volume {
@@ -53,6 +63,11 @@
 	display: flex;
 	align-items: center;
 	column-gap: 1rem;
+}
+
+.audio-player .audio-table-container {
+	height: calc((100vh - var(--navbar-height) - var(--audio-info_height) - var(--audio-controls-height) - 3.6rem));
+	overflow: auto;
 }
 
 .audio-player .audio-table td {

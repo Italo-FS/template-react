@@ -31,6 +31,7 @@ const Navbar = () => {
 					<ul className='navbar-nav me-auto mb-2 mb-lg-0'>
 						<NavbarItem href='faq'>FAQ</NavbarItem>
 						<NavbarItem href='player'>Player</NavbarItem>
+						<NavbarItem href='search'>Search</NavbarItem>
 					</ul>
 
 					<a className='theme-mode dark-mode mx-3' onClick={toggleTheme}>

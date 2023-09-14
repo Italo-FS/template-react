@@ -67,6 +67,10 @@ a {
 		z-index: 100;
 	}
 
+	.navbar-collapse {
+		background-color: var(--navbar-background-color);
+	}
+
 	body {
 		margin-top: var(--navbar-height);
 	}
